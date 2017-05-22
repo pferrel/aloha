@@ -19,9 +19,11 @@ cd /usr/local/lib
 for F in libboost_program_options-mt.dylib libboost_serialization-mt.dylib; do
   ln -s /usr/local/opt/boost155/lib/$F $F
 done
-**Note:** the latest homebrew may name the above dir /usr/local/opt/boost@1.55/lib so I (a reader) had to change this the above line to make it work
+```
 
+**Note:** the latest homebrew may name the above dir `/usr/local/opt/boost@1.55/lib` so you my need to change `boost155` to `boost@1.55` in the above line to make it work
 
+```
 # Create libz symlink to default system-installed libz.
 sudo mkdir -p /opt/local/lib
 sudo chown -R $(whoami) /opt/local
